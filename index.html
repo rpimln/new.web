@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+      <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>new.web</title>
+    
+    <!--bootstrap css-->
+        <link
+           href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" 
+           rel="stylesheet"
+           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" 
+           crossorigin="anonymous"/>
+        <!--google font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link 
+           href="https://fonts.googleapis.com/css2?family=roboto:wght@400;500;700;900&display=swap"
+           rel="stylesheet" />
+        <!--custom css-->
+          <link rel="stylesheet" href="style.css">   
+        <!--bootstrap icons-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+</head>
+
+    <body style="height: 100vh;">
+        <header>
+             
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top shadow-sm py-1">
+  <div class="container">
+    <a class="navbar-brand fw-bold fs-5" href="#home">MyGaweAn</a>
+    <div class="right-button">
+    <button class="navbar-toggler" 
+            type="button" 
+            data-bs-toggle="collapse"  
+            data-bs-target="#navbarNav" 
+            aria-controls="navbarNav" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a href="login.html" target="_blank" class="btn btn-primary">  Sign in </a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item mb-2">
+          <a class="nav-link btn btn-primary btn-sm text-white ms-2 px-3 py-1" href="#home">Home</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link btn btn-primary btn-sm text-white ms-2 px-3 py-1" href="#contact">Contact</a>
+        </li>
+        <li class="nav-item mb-2">
+          <a class="nav-link btn btn-primary btn-sm text-white ms-2 px-3 py-1" href="#help">Help</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<script>
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener("click", function (e) {
+      const target = document.querySelector(this.getAttribute("href"));
+      if (target) {
+        e.preventDefault();
+        target.scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+      }
+    });
+  });
+</script>
+
+<!--section-->
+<!--HOME-->
+<section id="home">
+  <div class="hero-section">
+    <div class="container my-5">
+      <div class="row align-items-center">
+        
+        <div class="col-md-6 order-2 order-md-1">
+          <h1 class="display-4 fw-bold"><span class="text-primary">Cari</span> pekerjaanmu disini!!</h1>
+          <p class="lead pb-4 pt-2">Temukan pekerjaan yang sesuai dengan passion dan skill mu</p>
+          <a href="#lowongan" class="btn btn-primary px-5 py-3 d-inline-block">Start Now</a>
+        </div>
+        <div class="col-md-6 order-1 order-md-2">
+          <img src="images/job-seeker-1.jpg" alt="cari pekerjaan" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!--ABOUT-->
+<section id="about" class="container py-5 mt-5">
+  <div class="row align-items-center">   
+    <div class="col-md-6">
+      <img src="images/istockphoto-1283801331-612x612.jpg" alt="" class="img-fluid" />
+    </div>
+    <div class="col-md-6">
+      <div class="about-section">
+        <h2 class="text-primary fw-bold">About MyGaweAn</h2>
+        <p>MyGaweAn adalah platform pencarian kerja yang membantu kamu
+          menemukan lowongan sesuai passion dan skill. Dengan tampilan yang
+          simpel dan mudah digunakan, kami menjadi jembatan antara pencari kerja
+          dan perusahaan, agar setiap orang bisa mendapat peluang kerja terbaik.
+        </p>
+        <button class="btn btn-primary px-5 py-3 d-inline-block fs-5 mt-2 fw-bold">
+          Learn more
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="features py-5">
+  <div class="container">
+    <h2 class="text-center mb-5 text-primary fw-bold">Key Features</h2>
+    <div class="row g-4 align-items-stretch mt-2">
+
+      <!--features 1-->
+      <div class="row mt-2 g-4">
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="search" class="icons"></ion-icon>
+            <h3>Job matching cerdas</h3>
+            <P class="card-text">Rekomendasi lowongan sesuai skill, 
+              pengalaman, dan passion kamu. </P>
+          </div>
+        </div>
+
+        <!--features 2-->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="phone-portrait" class="icons"></ion-icon>
+            <h3>Kemudahan akses</h3>
+            <P class="card-te2xt">Tampilan simpel, responsif, dan bisa
+              diakses dari berbagai perangkat. </P>
+          </div>
+        </div>
+
+        <!--features 3-->
+        <div class="col-12 col-lg-4">
+          <div class="card p-4 text-center feature-card">
+            <ion-icon name="notifications-outline" class="icons"></ion-icon>
+            <h3>Update lowongan</h3>
+            <P class="card-text">Lowongan kerja selalu diperbarui
+              setiap hari agar peluang tidak terlewat.</P>
+          </div>
+        </div> 
+    </div>
+  </div>
+</section>
+
+<section id="lowongan" class="py-5 section-gradient">
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+<div class="tab-content" id="myTabContent">
+  
+  <section class="py-5 section-gradient">
+  <div class="container">
+    <h2 class="fw-bold text-center mb-4 text-white">Cari disini!!</h2>
+
+    <!--cri-->
+<div class="mb-4 text-center">
+  <input 
+    type="text" 
+    id="searchInput" 
+    class="form-control w-75 mx-auto" 
+    placeholder="Cari lowongan berdasarkan nama perusahaan atau posisi..." 
+    onkeyup="searchJobs()"
+  >
+</div>
+
+<!--gd hsil-->
+<p id="noResults" class="text-center text-light fw-bold d-none"> Tidak ada hasil ditemukan</p>
+
+  
+    <ul class="nav justify-content-center mb-4" 
+        id="myTab" 
+        role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" 
+                id="all-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#new" 
+                type="button" 
+                role="tab"> New
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" 
+                id="new-tab" 
+                data-bs-toggle="tab" 
+                data-bs-target="#all" 
+                type="button" 
+                role="tab">All
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" 
+                id="tips-tab"
+                data-bs-toggle="tab" 
+                data-bs-target="#tips" 
+                type="button"
+                role="tab">Career Tips
+        </button>
+      </li>
+    </ul>
+
+    <!--list job-->
+    <div class="tab-content" id="myTabContent">
+      
+      <!--ALL-->
+      <div class="tab-pane fade tab-transition" id="new" role="tabpanel">
+        <div class="row g-4" id="job-list">
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Admin Kantor – PT. Jaya Asahi Indonesia</h5>
+                <h6 class="text-muted">Cirebon</h6>
+                <p class="card-text">📍 Cirebon | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: Rp 2.900.000 / bulan</p>
+                <a href="https://lokercirebon.com/lowongan-kerja-operator-pt-jaya-asahi-palimanan-cirebon/" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Sales Executive – Kota Depok</h5>
+                <h6 class="text-muted">Depok</h6>
+                <p class="card-text">📍 Depok | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: Rp 5.100.000 / bulan</p>
+                <a href="https://www.kitalulus.com/lowongan/posisi/sales/kota-depok" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">HRGA Staff – PT. Citra Megah Kreasindo</h5>
+                <h6 class="text-muted">Jakarta Utara</h6>
+                <p class="card-text">📍 Jakarta Utara | 💼 Full Time</p>
+                          <p class="card-text text-success fw-semibold">💰 Gaji:-</p>
+                <a href="https://www.loker.id/human-resources/staf-hrd/hrd-staff-pt-citra-megah-kreasindo-jakarta-utara.html" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div> 
+          </div>
+
+          
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Administrasi – PT. Anugrah Original Bionatura</h5>
+                <h6 class="text-muted">Jakarta Barat</h6>
+                <p class="card-text">📍 Jakarta Barat | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: Rp 4.500.000 – Rp 5.500.000 / bulan</p>
+                <a href="https://id.jobstreet.com/id/jobs/in-Jakarta-Barat-Jakarta-Raya" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--P-->
+        <nav aria-label="Page navigation" class="mt-4">
+          <ul class="pagination justify-content-center" id="pagination"></ul>
+        </nav>
+      </div>
+
+      <!--New-->
+      <div class="tab-pane fade tab-transition" id="all" role="tabpanel">
+        <div class="row g-4">
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+               <h5 class="card-title fw-bold text-primary">Crew Store – Gandoang Toys</h5>
+               <h6 class="text-muted">Bogor</h6>
+               <p class="card-text">📍 Bogor | 💼 Full Time</p>
+               <p class="card-text text-success fw-semibold">💰 Gaji: ± Rp 2.100.000 / bulan</p>
+               <a href="https://www.bogorloker.com/2025/07/crew-store-gandoang-toys.html" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Marketing Officer – PT. Aryanto Herbal</h5>
+                <h6 class="text-muted">Jakarta Pusat</h6>
+                <p class="card-text">📍 Jakarta Pusat | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: ± Rp 3.500.000 / bulan</p>
+                <a href="https://lokertasikmalaya.id/2-posisi-tersedia-lowongan-kerja-terbaru-di-aryanto-herbal-tasikmalaya-pendidikan-minimal-sma-smk-sederajat/" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Admin Warehouse – Tangerang</h5>
+                <h6 class="text-muted">Tangerang</h6>
+                <p class="card-text">📍 Tangerang | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: ± Rp 3.750.000 / bulan</p>
+                <a href="https://id.jobstreet.com/id/di-tangerang-jobs" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100 border-0">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Marketing – PT. Pandu Jaya</h5>
+                <h6 class="text-muted">Bekasi</h6>
+                <p class="card-text">📍 Bekasi | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: Rp 4.000.000 / bulan</p>
+                <a href="https://karirhub.kemnaker.go.id/lowongan-dalam-negeri/lowongan/marketing-d3cc7f6c-26f3-4fcb-b3c6-b5edaf71e0d2" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-6 col-md-3">
+            <div class="card shadow-sm h-100">
+              <div class="card-body">
+                <h5 class="card-title fw-bold text-primary">Administration – PT. Dipo Star Finance</h5>
+                <h6 class="text-muted">Jakarta Selatan</h6>
+                <p class="card-text">📍 Jakarta Selatan | 💼 Full Time</p>
+                <p class="card-text text-success fw-semibold">💰 Gaji: Rp 6.000.000 / bulan</p>
+                <a href="https://id.jobstreet.com/id/jobs/in-Jakarta-Selatan-Jakarta-Raya" class="btn btn-gradient w-100" target="_blank">Lamar Sekarang</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+    
+      <!--tips-->
+      <div class="tab-pane fade tab-transition" id="tips" role="tabpanel">
+        <div class="row g-4">
+          <div class="col-md-4">
+            <a href="cv.html" class="text-decoration-none text-dark">
+              <div class="card shadow-sm h-100 border-0">
+                <img src="https://cdn-icons-png.flaticon.com/512/2921/2921226.png" class="card-img-top p-4" alt="Tips CV">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Buat CV Menarik</h5>
+                  <p class="card-text">Pelajari cara membuat CV yang profesional agar dilirik HRD.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="wawancara.html" class="text-decoration-none text-dark">
+              <div class="card shadow-sm h-100 border-0">
+                <img src="https://cdn-icons-png.flaticon.com/512/1828/1828466.png" class="card-img-top p-4" alt="Tips Wawancara">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Tips Wawancara</h5>
+                  <p class="card-text">Kuasai teknik menjawab pertanyaan interview agar percaya diri.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a href="gaji.html" class="text-decoration-none text-dark">
+              <div class="card shadow-sm h-100 border-0">
+                <img src="https://cdn-icons-png.flaticon.com/512/1420/1420338.png" class="card-img-top p-4" alt="Tips Negosiasi">
+                <div class="card-body">
+                  <h5 class="card-title fw-bold">Negosiasi Gaji</h5>
+                  <p class="card-text">Pelajari cara menawar gaji dengan sopan dan efektif.</p>
+                </div>
+              </div>
+            </a>
+          </div>
+
+        </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .section-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+  }
+
+  .fade-in {
+    animation: fadein 0,6s ease;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.2);
+  }
+
+  .feature-card {
+    cursor: pointer;
+  }
+  .feature-card img {
+    transition: transform 0.3s ease;
+  }
+  .feature-card:hover img {
+    transform: scale(1.05);
+  }
+
+  .btn-gradient {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  .btn-gradient:hover {
+    background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+    color: white;
+    transform: scale(1.02);
+  }
+
+  .nav-link {
+    color: #fff;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    margin: 0 5px;
+    transition: all 0.3s ease;
+  }
+  .nav-link.active, .nav-link:hover {
+    background: #fff;
+    color: #764ba2 !important;
+  }
+</style>
+
+<section id="help" class="py-5">
+      <div class="container">
+        <h2 class="faq-heading">Help?</h2>
+        <div class="row">
+          <div class="col-12">
+            <div class="accordion" id="faqAccordion">
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingOne">
+                  <button class="accordion-button collapsed fs-4  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                    Apa itu My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    My GaweAn adalah platform untuk menemukan pekerjaan yang sesuai dengan kebutuhan dan minatmu, baik full-time, part-time, maupun freelance.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingTwo">
+                  <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                    Bagaimana cara mendaftar di My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Kamu bisa mendaftar dengan membuat akun menggunakan email atau akun media sosial, lalu melengkapi profil untuk mulai melamar pekerjaan.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingThree">
+                  <button class="accordion-button collapsed fs-4  fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                    Apakah My GaweAn gratis digunakan?
+                  </button>
+                </h2>
+                <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    Ya, My GaweAn dapat digunakan secara gratis oleh pencari kerja. Fitur premium untuk perusahaan juga tersedia.
+                  </div>
+                </div>
+              </div>
+
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="headingFour">
+                  <button class="accordion-button collapsed fs-4 fw-bold" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                    Jenis pekerjaan apa saja yang tersedia di My GaweAn?
+                  </button>
+                </h2>
+                <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+                  <div class="accordion-body">
+                    My GaweAn menyediakan berbagai lowongan mulai dari pekerjaan profesional, part-time untuk mahasiswa, hingga project freelance kreatif.
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<style>
+      .faq-heading { 
+        margin-bottom: 2rem; 
+        text-align: center;
+        font-weight: bold;
+        font-size: 2rem;
+      }
+
+      .accordion-button { 
+        transition: background 0.3s ease, color 0.3s ease; 
+        font-weight: 500;
+      }
+
+      .accordion-button:not(.collapsed) {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        color: #fff;
+      }
+
+      .accordion-body {
+        animation: fadeIn 0.3s ease;
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-5px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+    </style>
+  
+<!--cntkt-->
+<section id="contact">
+  <footer class="bg-primary text-white text-center py-5 mt-5">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Contact Us</h2>
+      <p class="mb-4">Hubungi kami untuk informasi lebih lanjut, kerja sama, atau pertanyaan seputar karier.</p>
+      
+      <div class="d-flex justify-content-center gap-4 mb-4">
+        <a href="https://www.instagram.com/mygaweanhub" target="_blank" class="text-white fs-4">
+          <i class="bi bi-instagram"></i>
+        </a>
+        <a href="https://www.facebook.com/mygaweanhub" target="_blank" class="text-white fs-4">
+          <i class="bi bi-facebook"></i>
+        </a>
+        <a href="https://www.linkedin.com/company/mygaweanhub" target="_blank" class="text-white fs-4">
+          <i class="bi bi-linkedin"></i>
+        </a>
+        <a href="mailto:mygaweanhub@gmail.com" class="text-white fs-4">
+          <i class="bi bi-envelope"></i>
+        </a>
+        <a href="https://wa.me/6281234567890" target="_blank" class="text-white fs-4">
+          <i class="bi bi-whatsapp"></i>
+        </a>
+      </div>
+
+      <p class="mb-1">Email: <a href="mailto:mygaweanhub@gmail.com" class="text-white text-decoration-underline">mygaweanhub@gmail.com</a></p>
+      <p class="mb-3">Telepon: <a href="tel:+627712970647" class="text-white text-decoration-underline">+62 877 1297 0647</a></p>
+      
+      <p class="mb-0">&copy; 2025 <strong>MyGaweAn Hub</strong>. All rights reserved.</p>
+    </div>
+  </footer>
+</section>
+
+        <script
+           src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" 
+           integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" 
+           crossorigin="anonymous">
+        </script>
+        
+        
+
+        <script
+           src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+           
+        <script>
+         function searchJobs() {
+           const input = document.getElementById('searchInput').value.toLowerCase();
+           const jobCards = document.querySelectorAll('.card-title');
+           const noResults = document.getElementById('noResults');
+           let visibleCount = 0;
+
+         jobCards.forEach(card => {
+           const jobCard = card.closest('.col-sm-6, .col-md-4, .col-md-6');
+           const jobTitle = card.textContent.toLowerCase();
+           const companyText = card.parentElement.querySelector('.card-text')?.textContent.toLowerCase() || '';
+
+         if (jobTitle.includes(input) || companyText.includes(input)) {
+          jobCard.style.display = '';
+          visibleCount++;
+        } else {
+          jobCard.style.display = 'none';
+        }
+      });
+
+      //pas gd hsil
+         if (visibleCount === 0) {
+          noResults.classList.remove('d-none');
+        } else {
+          noResults.classList.add('d-none');
+        }
+      }
+        </script>
+
+        <script>
+          window.addEventListener("load", () => {
+            document.body.classList.add("loaded");
+          });
+        </script>
+
+    </body>
+    </html>
+
